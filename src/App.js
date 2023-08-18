@@ -149,6 +149,16 @@ setCartItems((prev) =>
         )}
 
         <Header onClickCart={() => setCatdOpened(true)} />
+        <Home
+                items={items}
+                cartItems={cartItems}
+                searchValue={searchValue}
+                setSearchValue={setSearchValue}
+                onChangeSearchInput={onChangeSearchInput}
+                onAddToFavorite={onAddToFavorite}
+                onAddToCart={onAddToCart}
+                isLoading={isLoading}
+              />
         <Routes>
           <Route
             path=""
