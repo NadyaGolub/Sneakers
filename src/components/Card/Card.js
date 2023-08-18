@@ -57,8 +57,8 @@ function Cards({
                   <use
                     href={
                       isFavorite
-                        ? "/img/symbol-defs.svg#heart-like"
-                        : "/img/symbol-defs.svg#heart-unlike"
+                        ? "img/symbol-defs.svg#heart-like"
+                        : "img/symbol-defs.svg#heart-unlike"
                     }
                   ></use>
                 </svg>
@@ -74,7 +74,7 @@ function Cards({
 {onPlus && 
             <Plus
               onClick={onClickPlus}
-              src={isItemAdded(id) ? "/img/check.svg" : "/img/plus.svg"}
+              src={isItemAdded(id) ? "img/check.svg" : "img/plus.svg"}
               alt="Plus"
             />}
           </CardBottom>
