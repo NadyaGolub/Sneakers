@@ -152,7 +152,7 @@ setCartItems((prev) =>
        
         <Routes>
           <Route
-            path=""
+            path="/"
             element={
               <Home
                 items={items}
@@ -168,8 +168,8 @@ setCartItems((prev) =>
           />
           
 
-          <Route path="favorites" element={<Favorites />} />
-          <Route path="orders" element={<Orders />} />
+          <Route path="/favorites" element={<Favorites />} />
+          <Route path="/orders" element={<Orders />} />
           
         </Routes>
 
