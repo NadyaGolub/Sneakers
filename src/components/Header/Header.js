@@ -28,6 +28,9 @@ function Header(props) {
             <SvgBasket >
               <use href="./img/symbol-defs.svg#basket"></use>
             </SvgBasket>
+            <SvgBasket >
+              <use href="./img/symbol-defs.svg#heart-like"></use>
+            </SvgBasket>
             <span>{ totalPrice} грн</span>
           </Basket>
           <li>

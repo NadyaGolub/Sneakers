@@ -57,8 +57,8 @@ function Cards({
                   <use
                     href={
                       isFavorite
-                        ? "img/symbol-defs.svg#heart-like"
-                        : "img/symbol-defs.svg#heart-unlike"
+                        ? "./img/symbol-defs.svg#heart-like"
+                        : "./img/symbol-defs.svg#heart-unlike"
                     }
                   ></use>
                 </svg>
