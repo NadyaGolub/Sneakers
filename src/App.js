@@ -23,13 +23,13 @@ function App() {
     async function fetchData() {
       try {
         const cartResponse = await axios.get(
-          "https://64d64067754d3e0f1361d63b.mockapi.io/cart"
+          'https://64d64067754d3e0f1361d63b.mockapi.io/cart'
         );
         const favoritesResponse = await axios.get(
-          "https://64d8e8a45f9bf5b879ceae8b.mockapi.io/favorites"
+          'https://64d8e8a45f9bf5b879ceae8b.mockapi.io/favorites'
         );
         const itemsResponse = await axios.get(
-          "https://64d64067754d3e0f1361d63b.mockapi.io/items"
+          'https://64d64067754d3e0f1361d63b.mockapi.io/items'
         );
 
         setIsLoading(false);
@@ -59,7 +59,7 @@ function App() {
       } else {
         setCartItems((prev) => [...prev, obj]);
         const { data } =  await axios.post(
-          "https://64d64067754d3e0f1361d63b.mockapi.io/cart",
+          'https://64d64067754d3e0f1361d63b.mockapi.io/cart',
           obj
         );
 setCartItems((prev) =>
@@ -105,7 +105,7 @@ setCartItems((prev) =>
         );
       } else {
         const { data } = await axios.post(
-          "https://64d8e8a45f9bf5b879ceae8b.mockapi.io/favorites",
+          'https://64d8e8a45f9bf5b879ceae8b.mockapi.io/favorites',
           obj
         );
 
