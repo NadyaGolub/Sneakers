@@ -23,7 +23,7 @@ function Header(props) {
 
   return (
     <HeaderBox>
-      <NavLink to="/Sneakers">
+      <NavLink to="/">
         <HeaderLeft>
           <Img width={40} height={40} src="img/logo.png" alt="" />
           <div>

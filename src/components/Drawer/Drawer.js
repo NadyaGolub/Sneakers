@@ -59,7 +59,7 @@ function Drawer({ onClose, onRemove, items = [] }) {
         <BasketGoods>
           Кошик{" "}
           <RemoveBtn onClick={onClose}>
-            <use href="./img/symbol-defs.svg#delete"></use>
+            <use href="img/symbol-defs.svg#delete"></use>
           </RemoveBtn>
         </BasketGoods>
         {items.length > 0 ? (
@@ -76,7 +76,7 @@ function Drawer({ onClose, onRemove, items = [] }) {
                     <RemoveBtn>
                       <use
                         onClick={() => onRemove(obj.id)}
-                        href="./img/symbol-defs.svg#delete"
+                        href="img/symbol-defs.svg#delete"
                       ></use>
                     </RemoveBtn>
                   </div>
@@ -99,7 +99,7 @@ function Drawer({ onClose, onRemove, items = [] }) {
               <GreenButton disabled={isLoading} onClick={onClickOrder}>
                 Оформити замовлення
                 <svg width={16} height={14}>
-                  <use href="./img/symbol-defs.svg#arrow"></use>
+                  <use href="img/symbol-defs.svg#arrow"></use>
                 </svg>
               </GreenButton>
             </CartTotalBlock>
