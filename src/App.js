@@ -151,6 +151,7 @@ setCartItems((prev) =>
         <Header onClickCart={() => setCatdOpened(true)} />
        
         <Routes>
+          
           <Route
             path="/"
             element={
@@ -168,8 +169,8 @@ setCartItems((prev) =>
           />
           
 
-          <Route path="/favorites" element={<Favorites />} />
-          <Route path="/orders" element={<Orders />} />
+          <Route path="favorites" element={<Favorites />} />
+          <Route path="orders" element={<Orders />} />
           
         </Routes>
 
