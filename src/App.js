@@ -144,9 +144,9 @@ function App() {
         <Header onClickCart={() => setCatdOpened(true)} />
 
         <Routes>
-        
+          
           <Route
-            path="/"
+            index
             element={
               <Home
                 items={items}
@@ -162,7 +162,8 @@ function App() {
           />
 
           <Route path="/favorites" element={<Favorites />} />
-          <Route path="/orders" element={<Orders />} />
+            <Route path="/orders" element={<Orders />} />
+            
         </Routes>
 
         <GlobalStyle />

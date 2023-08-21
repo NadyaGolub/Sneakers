@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import {
   Basket,
   HeaderBox,
@@ -23,15 +23,16 @@ function Header(props) {
 
   return (
     <HeaderBox>
-      <NavLink to="/">
+      <Link to="/">
         <HeaderLeft>
           <Img width={40} height={40} src="img/logo.png" alt="" />
           <div>
             <NameShop>React Sneakers</NameShop>
             <ShopTitle>Магазин кросівок</ShopTitle>
           </div>
+          
         </HeaderLeft>
-      </NavLink>
+      </Link>
       <HeaderRight>
         <Basket onClick={props.onClickCart}>
           <SvgBasket>
@@ -41,21 +42,23 @@ function Header(props) {
           <span>{totalPrice} грн</span>
         </Basket>
         <li>
-          <NavLink to="/favorites">
+          <Link to="/favorites">
             <SvgBasket width={20} height={20}>
               <use href="./img/symbol-defs.svg#heart"></use>
             </SvgBasket>
-          </NavLink>
+          </Link>
         </li>
         <li>
-          <NavLink to="/orders">
+          <Link to="/orders">
             <svg width={20} height={20}>
               <use href="./img/symbol-defs.svg#user"></use>
             </svg>
-          </NavLink>
+          </Link>
         </li>
       </HeaderRight>
+      
     </HeaderBox>
+    
   );
 }
 
