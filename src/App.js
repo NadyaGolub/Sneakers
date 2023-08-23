@@ -146,7 +146,7 @@ function App() {
         <Routes>
           
           <Route
-            index
+            path='/'
             element={
               <Home
                 items={items}
