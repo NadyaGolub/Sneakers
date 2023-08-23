@@ -19,7 +19,7 @@ const Info = ({  title, image, description }) => {
               {description}
             </Text>
             <GreenButton onClick={( ) => setCatdOpened(false)}>
-              <img src="/img/arrow-empty.svg" alt="Arrow" />
+              <img src="img/arrow-empty.svg" alt="Arrow" />
               Повернутися назад
             </GreenButton>
           </CartEmpty>
